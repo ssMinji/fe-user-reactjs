@@ -11,6 +11,7 @@ import RFTextField from "./modules/form/RFTextField";
 
 import { email, required } from "./modules/form/validation";
 import MenuItem from "@mui/material/MenuItem";
+import TextField from "./modules/components/TextField";
 
 import Link from "@mui/material/Link";
 import FormFeedback from "./modules/form/FormFeedback";
@@ -80,9 +81,8 @@ function SignUpIn() {
                 name="username"
                 required
               />
-              <Field
+              <TextField
                 fullWidth
-                component={RFTextField}
                 disabled={submitting || sent}
                 required
                 name="password"

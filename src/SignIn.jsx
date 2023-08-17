@@ -12,6 +12,7 @@ import FormButton from "./modules/form/FormButton";
 import FormFeedback from "./modules/form/FormFeedback";
 import withRoot from "./modules/withRoot";
 import { signin } from "./config/ApiService";
+import TextField from "./modules/components/TextField";
 
 function SignIn() {
   const [sent, setSent] = React.useState(false);
@@ -81,10 +82,9 @@ function SignIn() {
                 required
                 size="large"
               />
-              <Field
+              <TextField
                 fullWidth
                 size="large"
-                component={RFTextField}
                 disabled={submitting || sent}
                 required
                 name="password"
